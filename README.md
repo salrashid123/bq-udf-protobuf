@@ -325,5 +325,8 @@ module.exports.DecodeBuf = function (d) {
 
 #### References
 
-- [Base64Binary](https://github.com/danguer/blog-examples/blob/master/js/base64-binary.js)
-  use [bytebuffer](https://github.com/protobufjs/bytebuffer.js) or [crypto-js](https://code.google.com/archive/p/crypto-js/) to encode/decode bytes-base64
+- The UDF uses code the following libraries:
+  - [Base64Binary](https://github.com/danguer/blog-examples/blob/master/js/base64-binary.js)
+  - [base64-arraybuffer](https://github.com/niklasvh/base64-arraybuffer)
+
+- TODO use [bytebuffer](https://github.com/protobufjs/bytebuffer.js) or [crypto-js](https://code.google.com/archive/p/crypto-js/) to encode/decode bytes-base64
