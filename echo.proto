@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message MovieScenes {
+  string title = 1;
+  int64  release_year = 2;
+  string locations = 3;  
+  string director = 4;  
+}
