@@ -1,5 +1,10 @@
 ### BigQuery UDF Marshall/Unmarshall Protocolbuffers
 
+
+>> **Update 11/17/22**:   its probably easier to define a BQ [Remote Function](https://cloud.google.com/bigquery/docs/reference/standard-sql/remote-functions) to do this than a BQ UDF in javascript.
+>>    in this mode, you do the marshalling/unmarshalling in a cloud function similar to [BigQuery Remote Functions in Go](https://github.com/salrashid123/bq_cloud_function_golang), [AEAD Encryption with BQ Remote Functions](https://github.com/salrashid123/bq_aead_remote_function)
+
+
 Sample [BigQuery User-defined Function](https://cloud.google.com/bigquery/docs/reference/standard-sql/user-defined-functions) UDF that will encode and decode a [protocol buffer](https://developers.google.com/protocol-buffers/docs/proto3) using [protojs](https://github.com/protobufjs/protobuf.js).
 
 This UDF allows you to specify the protobuf _inline_ as part of the UDF itself.  For example, you can dynamically specify the proto to encode against as a variable you pass to the actual exported function:
